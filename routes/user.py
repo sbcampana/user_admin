@@ -12,7 +12,7 @@ users = [{
     "last_name": "test_last_name_2"
 }]
 
-@user_bp.route('/users', methods=['GET'])
+@user_bp.route('/users', methods=['GET'], endpoint='get_users')
 def get_users():
 
     return {
